@@ -8,7 +8,7 @@ abstract class Styles{
    fontWeight: FontWeight.w600,
  );
  static TextStyle getBookTitleStyle()=> const TextStyle(
-   fontSize: 18,
+   fontSize: 17,
    color: AppColors.primaryColor,
    fontFamily: "Schyler",
    fontWeight: FontWeight.w500,

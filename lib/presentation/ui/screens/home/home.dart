@@ -78,7 +78,7 @@ class _HomeState extends State<Home> {
                   crossAxisCount: 2,
                 shrinkWrap: true,
                 crossAxisSpacing: 50,
-                mainAxisSpacing: 60,
+                mainAxisSpacing: 59,
                 children: [
                   InkWell(
                     onTap: () {
@@ -102,15 +102,17 @@ class _HomeState extends State<Home> {
                       final url =Uri.parse("https://www.youtube.com/@baxtiyoryuldashev4049");
                       if(await canLaunchUrl(url)){
                         await launchUrl(url);
-                      }
-                    },
+                      }},
                     child: itmDashboard("Video Kurslar", CupertinoIcons.play, Colors.deepPurple),
                   ),
-
-
-
-
-
+                  InkWell(
+                    onTap: () async {
+                      final url =Uri.parse("https://webdizayn.uz/login");
+                      if(await canLaunchUrl(url)){
+                        await launchUrl(url);
+                      }},
+                    child: itmDashboard("Ruyxatdan utish", CupertinoIcons.pencil_outline, Colors.deepPurple),
+                  ),
 
                 ],),
               ),
@@ -124,6 +126,7 @@ class _HomeState extends State<Home> {
             icon: Icon(Icons.home),
             label: 'Home',
           ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
